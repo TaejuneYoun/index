@@ -27,9 +27,7 @@
             background-color: #fff;
             color: #000;
             text-align: left;
-            padding: 0;
-            margin-left: 10px;
-            margin-right: 10px;
+            padding: 0 10px;
             display: flex;
             justify-content: space-between;
             align-items: left;
@@ -47,7 +45,7 @@
             width: 100%;
             overflow: hidden;
             position: relative;
-            height: 800px;
+            height: 600px;
             margin-top: 20px;
         }
 
@@ -62,11 +60,12 @@
 
         .line {
             border-top: 2px solid #000;
-            margin-top: 0px;
+            margin-top: -31px;
         }
 
         .columns {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
             margin-top: 0px;
         }
@@ -74,7 +73,9 @@
         .column {
             flex: 0;
             text-align: left;
-            font-size: 30pt; /* 추가된 부분 */
+            font-size: 15pt;
+            width: 100%;
+            margin-bottom: 10px;
         }
 
         .column a {
@@ -89,7 +90,7 @@
 
         .additional-text {
             text-align: left;
-            margin-top: 10px; /* 추가된 부분 */
+            margin-top: 10px;
         }
 
         footer {
@@ -97,6 +98,21 @@
             border-top: 3px solid #000;
             text-align: left;
             padding: 10px 0;
+        }
+
+        /* 미디어 쿼리 추가 */
+        @media screen and (max-width: 600px) {
+            header {
+                padding: 0 5px;
+            }
+
+            .slider {
+                height: 300px;
+            }
+
+            .columns {
+                flex-direction: column;
+            }
         }
     </style>
 </head>
@@ -126,102 +142,9 @@
         </div>
     </div>
 
-  <div class="columns">
-      <div class="column">
-          <a href="index.html">Taejune</a>
-      </div>
-      <div class="column">
-          <a href="index.html">2023</a>
-      </div>
-      <div class="column">
-          <a href="index.html">Display</a>
-      </div>
-  </div>
-
-  <div class="columns">
-      <div class="column">
-          <a href="index.html">Taejune</a>
-      </div>
-      <div class="column">
-          <a href="index.html">2023</a>
-      </div>
-      <div class="column">
-          <a href="index.html">Display</a>
-      </div>
-  </div>
-
-  <div class="columns">
-      <div class="column">
-          <a href="index.html">Crab   </a>
-      </div>
-      <div class="column">
-          <a href="index.html">2022</a>
-      </div>
-      <div class="column">
-          <a href="index.html">DSM</a>
-      </div>
-  </div>
-
-  <div class="columns">
-      <div class="column">
-          <a href="index.html">Crab   </a>
-      </div>
-      <div class="column">
-          <a href="index.html">2022</a>
-      </div>
-      <div class="column">
-          <a href="index.html">DSM</a>
-      </div>
-  </div>
-
-  <div class="columns">
-      <div class="column">
-          <a href="index.html">Crab   </a>
-      </div>
-      <div class="column">
-          <a href="index.html">2022</a>
-      </div>
-      <div class="column">
-          <a href="index.html">DSM</a>
-      </div>
-  </div>
-
-  <div class="columns">
-      <div class="column">
-          <a href="index.html">Crab   </a>
-      </div>
-      <div class="column">
-          <a href="index.html">2022</a>
-      </div>
-      <div class="column">
-          <a href="index.html">DSM</a>
-      </div>
-  </div>
-
-  <div class="columns">
-      <div class="column">
-          <a href="index.html">Crab   </a>
-      </div>
-      <div class="column">
-          <a href="index.html">2022</a>
-      </div>
-      <div class="column">
-          <a href="index.html">DSM</a>
-      </div>
-  </div>
-
-  <div class="columns">
-      <div class="column">
-          <a href="index.html">Crab   </a>
-      </div>
-      <div class="column">
-          <a href="index.html">2022</a>
-      </div>
-      <div class="column">
-          <a href="index.html">DSM</a>
-      </div>
-  </div>
-  
+    <div class="additional-text">
+        <p>Design | 2021 | Mobile Design</p>
+    </div>
 
     <footer>
         ©2024 Taejune Youn. All rights reserved.
