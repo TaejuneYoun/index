@@ -110,6 +110,13 @@
             .columns {
                 flex-direction: column;
             }
+            .column:nth-child(2),
+            .column:nth-child(3) {
+                display: none; /* 변경: 두 번째와 세 번째 컬럼을 숨김 */
+            }
+            header #infoLink {
+                display: none; /* 변경: 화면이 작을 때 info 링크를 숨김 */
+            }
         }
     </style>
 </head>
@@ -121,9 +128,7 @@
 
     <div class="slider">
         <div class="slides">
-            <img class="slide" src="TJ_00511.jpg" alt="Slide 1">
-            <img class="slide" src="TJ_00511.jpg" alt="Slide 2">
-            <img class="slide" src="TJ_00511.jpg" alt="Slide 3">
+            <img class="slide" src="https://via.placeholder.com/800x600" alt="Slide 1">
         </div>
     </div>
 
