@@ -18,7 +18,7 @@
             color: #000;
             text-align: left;
             font-size: 15pt;
-            transition: margin-top 0.5s ease;
+            transition: margin-top 0.1s ease;
         }
 
         header {
@@ -26,52 +26,74 @@
             width: 100%;
             background-color: #fff;
             color: #000;
-            text-align: center;
+            text-align: left;
             padding: 0;
+            margin-left: 10px
+            margin-right: 10px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             border-bottom: 3px solid #000;
-            margin-bottom: 10em;
-            transition: top 0.2s ease, opacity 0.2s ease; /* 추가된 부분 */
+            z-index: 1000;
+            margin: 0px 0 0;
         }
 
-        header h1 {
-            margin: 0;
+        header h1, header #infoLink {
             cursor: pointer;
+            margin: 0;
         }
 
-        header.scrolled {
-            top: -50px;
-            opacity: 0; /* 추가된 부분 */
+
         }
 
-        hr {
-            border: none;
-            height: 3px;
-            background-color: #000;
-            margin: 500px 0 0;
+        .slider {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            height: 600px;
+            margin-top: 20px;
         }
 
-        footer {
-            background-color: #fff;
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+        }
+
+        .line {
+            border-top: 2px solid #000;
+            margin-top: 0px;
+        }
+
+        .columns {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 0px;
+        }
+
+        .column {
+            flex: 0;
+            text-align: center;
+        }
+
+        .column a {
+            text-decoration: none;
             color: #000;
-            text-align: left;
-            padding: 3px;
-            margin: .5em;
-        }
-
-        a {
             transition: filter 0.3s ease;
         }
 
-        a:hover {
+        .column a:hover {
             filter: brightness(70%);
         }
 
-        img {
-            width: 100%;
-            height: auto;
+        footer {
+            margin-top: 10px;
+            border-top: 3px solid #000;
+            text-align: left;
+            padding: 10px 0;
         }
     </style>
 </head>
@@ -81,37 +103,33 @@
         <h1 id="infoLink">Info</h1>
     </header>
 
-    <h1>Hello, Custom Cursor!</h1>
+    <div class="slider">
+        <div class="slides">
+            <img class="slide" src="https://via.placeholder.com/800x600" alt="Slide 1">
+        </div>
+    </div>
 
-    <p>This is your first page with a custom cursor.</p>
+    <hr class="line">
 
-    <hr>
+    <div class="columns">
+        <div class="column">
+            <a href="index.html">Taejune</a>
+        </div>
+        <div class="column">
+            <a href="index.html">2023</a>
+        </div>
+        <div class="column">
+            <a href="index.html">Display</a>
+        </div>
+    </div>
 
     <footer>
         ©2024 Taejune Youn. All rights reserved.
     </footer>
 
     <script>
-        document.getElementById('mainLink').addEventListener('click', function() {
-            window.location.href = 'index.html';
-        });
-
-        document.getElementById('infoLink').addEventListener('click', function() {
-            window.open('info.html', '_blank');
-        });
-
-        window.addEventListener('scroll', function() {
-            const header = document.querySelector('header');
-            const scrolledClass = 'scrolled';
-            const scrollY = window.scrollY || window.pageYOffset;
-
-            if (scrollY > 50) {
-                header.classList.add(scrolledClass);
-            } else {
-                header.classList.remove(scrolledClass);
-            }
-        });
+        document.getElementById('mainLink').addEventListener('click', () => window.location.href = 'index.html');
+        document.getElementById('infoLink').addEventListener('click', () => window.open('info.html', '_blank'));
     </script>
 </body>
 </html>
-
