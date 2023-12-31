@@ -4,28 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taejune Youn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&display=swap" rel="stylesheet">
+
     <style>
         body {
-            font-family: 'Neue Haas Grotesk Text', Arial, sans-serif;
-            cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%231C225E" width="24px" height="24px"><circle cx="12" cy="12" r="10"/></svg>'), auto;
-            margin: 2px;
+            font-family: 'Bricolage Grotesque', sans-serif;
+            cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%231C225E" width="64px" height="64px"><circle cx="12" cy="12" r="10"/></svg>'), auto;
+            margin: 0;
             padding: 0;
             background-color: #fff;
             color: #000;
             text-align: left;
             font-size: 15pt;
+            transition: margin-top 0.5s ease;
         }
 
         header {
+            position: fixed;
+            width: 100%;
             background-color: #fff;
             color: #000;
             text-align: center;
-            padding: 3px;
+            padding: 0;
             display: flex;
             justify-content: space-between;
             align-items: center;
             border-bottom: 3px solid #000;
-            margin-bottom: 0;
+            margin-bottom: 10em;
+            transition: top 0.2s ease, opacity 0.2s ease; /* 추가된 부분 */
         }
 
         header h1 {
@@ -33,11 +41,16 @@
             cursor: pointer;
         }
 
+        header.scrolled {
+            top: -50px;
+            opacity: 0; /* 추가된 부분 */
+        }
+
         hr {
             border: none;
             height: 3px;
             background-color: #000;
-            margin: 50px 0 0;
+            margin: 500px 0 0;
         }
 
         footer {
@@ -45,7 +58,20 @@
             color: #000;
             text-align: left;
             padding: 3px;
-            margin: 0; /* footer margin을 0으로 설정 */
+            margin: .5em;
+        }
+
+        a {
+            transition: filter 0.3s ease;
+        }
+
+        a:hover {
+            filter: brightness(70%);
+        }
+
+        img {
+            width: 100%;
+            height: auto;
         }
     </style>
 </head>
@@ -56,9 +82,8 @@
     </header>
 
     <h1>Hello, Custom Cursor!</h1>
-    <h1>This is your first page with a custom cursor.</h1>
 
-    <img src="your-image-url.jpg" alt="Your Image">
+    <p>This is your first page with a custom cursor.</p>
 
     <hr>
 
@@ -68,12 +93,25 @@
 
     <script>
         document.getElementById('mainLink').addEventListener('click', function() {
-            window.location.href = 'main.html';
+            window.location.href = 'index.html';
         });
 
         document.getElementById('infoLink').addEventListener('click', function() {
             window.open('info.html', '_blank');
         });
+
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            const scrolledClass = 'scrolled';
+            const scrollY = window.scrollY || window.pageYOffset;
+
+            if (scrollY > 50) {
+                header.classList.add(scrolledClass);
+            } else {
+                header.classList.remove(scrolledClass);
+            }
+        });
     </script>
 </body>
 </html>
+
