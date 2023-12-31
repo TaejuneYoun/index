@@ -45,7 +45,7 @@
             width: 100%;
             overflow: hidden;
             position: relative;
-            height: 300px; /* 수정된 부분 */
+            height: 600px;
             margin-top: 20px;
         }
 
@@ -56,9 +56,6 @@
 
         .slide {
             min-width: 100%;
-            object-fit: cover; /* 추가된 부분 */
-            display: block;
-            margin: 0 auto; /* 추가된 부분 */
         }
 
         .line {
@@ -96,25 +93,11 @@
             margin-top: 10px;
         }
 
-        .footer {
+        footer {
             margin-top: 10px;
             border-top: 3px solid #000;
             text-align: left;
             padding: 10px 0;
-        }
-
-        .slider-dots {
-            display: flex;
-            justify-content: center;
-            margin-top: 10px;
-        }
-
-        .dot {
-            width: 5px;
-            height: 5px;
-            background-color: #000;
-            border-radius: 50%;
-            margin: 0 5px;
         }
 
         /* 미디어 쿼리 추가 */
@@ -125,6 +108,10 @@
 
             .slider {
                 height: 300px;
+            }
+
+            .columns {
+                flex-direction: column;
             }
         }
     </style>
@@ -138,13 +125,6 @@
     <div class="slider">
         <div class="slides">
             <img class="slide" src="https://via.placeholder.com/800x600" alt="Slide 1">
-        </div>
-        <div class="slider-dots">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
         </div>
     </div>
 
@@ -166,7 +146,7 @@
         <p>Design | 2021 | Mobile Design</p>
     </div>
 
-    <footer class="footer">
+    <footer>
         ©2024 Taejune Youn. All rights reserved.
     </footer>
 
