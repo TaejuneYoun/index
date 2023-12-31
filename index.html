@@ -1,12 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taejune Youn</title>
+    <style>
+        body {
+            font-family: 'Neue Haas Grotesk Text', Arial, sans-serif;
+            cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%231C225E" width="24px" height="24px"><circle cx="12" cy="12" r="10"/></svg>'), auto;
+            margin: 2px;
+            padding: 0;
+            background-color: #fff;
+            color: #000;
+            text-align: left;
+            font-size: 15pt;
+        }
+
+        header {
+            background-color: #fff;
+            color: #000;
+            text-align: center;
+            padding: 3px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid #000;
+            margin-bottom: 0;
+        }
+
+        header h1 {
+            margin: 0;
+            cursor: pointer;
+        }
+
+        hr {
+            border: none;
+            height: 3px;
+            background-color: #000;
+            margin: 50px 0 0;
+        }
+
+        footer {
+            background-color: #fff;
+            color: #000;
+            text-align: left;
+            padding: 3px;
+            margin: 0; /* footer margin을 0으로 설정 */
+        }
+    </style>
 </head>
 <body>
-  <p>Hello, World!</p>
+    <header>
+        <h1 id="mainLink">Taejune Youn</h1>
+        <h1 id="infoLink">Info</h1>
+    </header>
+
+    <h1>Hello, Custom Cursor!</h1>
+    <p>This is your first page with a custom cursor.</p>
+
+    <img src="your-image-url.jpg" alt="Your Image">
+
+    <hr>
+
+    <footer>
+        ©2024 Taejune Youn. All rights reserved.
+    </footer>
+
+    <script>
+        document.getElementById('mainLink').addEventListener('click', function() {
+            window.location.href = 'main.html';
+        });
+
+        document.getElementById('infoLink').addEventListener('click', function() {
+            window.open('info.html', '_blank');
+        });
+    </script>
 </body>
 </html>
