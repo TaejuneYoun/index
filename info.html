@@ -1,238 +1,176 @@
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Taejune Youn</title>
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&display=swap" rel="stylesheet">
-      <link rel="shortcut icon" href="favicon-32x32.png" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taejune Youn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon-32x32.png" />
 
-      <style>
-          body {
-              font-family: 'Bricolage Grotesque', sans-serif;
-              cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%231C225E" width="64px" height="64px"><circle cx="12" cy="12" r="10"/></svg>'), auto;
-              margin: auto;
-              padding: auto;
-              background-color: #fff;
-              color: #000;
-              text-align: auto;
-              font-size: 15pt;
-              transition: margin-top 0.1s ease;
-          }
+    <style>
+        body {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%231C225E" width="64px" height="64px"><circle cx="12" cy="12" r="10"/></svg>'), auto;
+            margin: auto;
+            padding: auto;
+            background-color: #fff;
+            color: #000;
+            text-align: auto;
+            font-size: 15pt;
+            transition: margin-top 0.1s ease;
+        }
 
-          header {
-              position: fixed;
-              width: 100%;
-              background-color: #fff;
-              color: #000;
-              text-align: center;
-              padding: 0px 0px;
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-              border-bottom: 3px solid #000;
-              z-index: 1000;
-              margin: -20px 0 0px 0px;
-          }
+        header {
+            position: fixed;
+            width: 100%;
+            background-color: #fff;
+            color: #000;
+            text-align: center;
+            padding: 0px 0px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid #000;
+            z-index: 1000;
+            margin: -20px 0 0px 0px;
+        }
 
-          header h1, header #infoLink {
-              cursor: pointer;
-              margin: 0;
-          }
+        header h1, header #infoLink {
+            cursor: pointer;
+            margin: 0;
+        }
 
-          .slider {
-              width: 100%;
-              overflow: hidden;
-              position: relative;
-              height: 600px;
-              margin: 20px 0 0 0;
-              align-items: top;
-              justify-content: center;
-              img {
+        .slider {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            height: 600px;
+            margin: 20px 0 0 0;
+            align-items: self-position;
+            justify-content: content-position;
+            img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover; // maintaining its original ratio.
-              }
-          }
+            }
+        }
 
-          .slides {
-              display: flex;
-              transition: transform 0.5s ease-in-out;
-          }
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
 
-          .slide {
-              min-width: 150%;
+        .slide {
+            min-width: 150%;
+        }
 
+        .line {
+            border-top: 2px solid #000;
+            margin-top: 0px;
+        }
 
-          }
+        .columns {
+            justify-content: left;
+            margin-top: 0px;
+        }
 
-          .line {
-              border-top: 2px solid #000;
-              margin-top: 0px;
-          }
+        .column {
+            flex: 1em;
+            text-align: left;
+            font-size: 30pt;
+            width: 100%;
+            margin-bottom: 0px;
+        }
 
-          .columns {
-              display: flex;
-              justify-content: center
-              margin-top: 0px;
-          }
+        .column a {
+            text-decoration: none;
+            color: #000;
+            transition: filter 0.3s ease;
+        }
 
-          .column {
-              flex: 1em;
-              text-align: center;
-              font-size: 30pt;
-              width: 100%;
-              margin-bottom: 0px;
-          }
+        .column a:hover {
+            filter: brightness(70%);
+        }
 
-          .column a {
-              text-decoration: none;
-              color: #000;
-              transition: filter 0.3s ease;
-          }
+        footer {
+            margin-top: 10px;
+            border-top: 3px solid #000;
+            text-align: left;
+            padding: 10px 0;
+        }
 
-          .column a:hover {
-              filter: brightness(70%);
-          }
+        /* 미디어 쿼리 추가 */
+        @media screen and (max-width: 600px) {
+            header {
+                padding: 0;
+            }
 
+            .slider {
+                height: 300px;
+                width: 100%;
+            }
 
+            .columns {
+                flex-direction: column;
+            }
+            .column:nth-child(2),
+            .column:nth-child(3) {
+                display: none;
+            }
+            header #infoLink {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="mainLink">Taejune Youn</h1>
+    </header>
 
-          footer {
-              margin-top: 10px;
-              border-top: 3px solid #000;
-              text-align: left;
-              padding: 10px 0;
-          }
+    <div class="slider">
+        <div class="slides">
+            <img class="slide" src="https://source.unsplash.com/random/?car" alt="Slide 1">
+        </div>
+    </div>
 
-          /* 미디어 쿼리 추가 */
-          @media screen and (max-width: 600px) {
-              header {
-                  padding: 0 px;
-              }
-
-              .slider {
-                  height: flex;
-                  width: 100%;
-                  overflow: hidden;
-                  position: relative;
-                  height: 300px;
-                  margin: 20px 0 0 0;
-                  align-items: top;
-                  justify-content: left;
-                  img {
-                    width: 100%;
-                    height: flex-wrap: ;;
-                    object-fit: cover; // maintaining its original ratio.
-                  }
-                }
-
-              .columns {
-                  flex-direction: column;
-              }
-              .column:nth-child(2),
-              .column:nth-child(3) {
-                  display: none; /* 변경: 두 번째와 세 번째 컬럼을 숨김 */
-              }
-              header #infoLink {
-                  display: none; /* 변경: 화면이 작을 때 info 링크를 숨김 */
-              }
-          }
-      </style>
-  </head>
-  <body>
-      <header>
-          <h1 id="mainLink">Taejune Youn</h1>
-      </header>
-
-      <div class="slider">
-          <div class="slides">
-              <img class="slide" src="https://source.unsplash.com/random/?car" alt="Slide 1">
-          </div>
-      </div>
-
-      <hr class="line">
-
-      <div class="columns">
-          <div class="column">
-              <a href="index.html">DSM-light</a>
-          </div>
-          <div class="column">
-              <a href="index.html">2023</a>
-          </div>
-          <div class="column">
-              <a href="index.html">Automobile</a>
-          </div>
-      </div>
+    <hr class="line">
 
     <div class="columns">
         <div class="column">
-            <a href="index.html">C-LIGHT</a>
+            <a href="https://www.behance.net/ytj1214a201">Behance</a>
         </div>
+    </div>
+   
+    <div class="columns">
         <div class="column">
-            <a href="index.html">2023</a>
-        </div>
-        <div class="column">
-            <a href="index.html">Table Light</a>
+          <a href="mailto:"Steveyoun@kookmin.ac.kr">Mail</a>
         </div>
     </div>
 
     <div class="columns">
         <div class="column">
-            <a href="index.html">Hui-Hui</a>
-        </div>
-        <div class="column">
-            <a href="index.html">2023</a>
-        </div>
-        <div class="column">
-            <a href="index.html">Spatial</a>
+            <a href="https://www.linkedin.com/in/taejuneyoun/">Linkedin</a>
         </div>
     </div>
 
     <div class="columns">
         <div class="column">
-            <a href="index.html">J-Chair</a>
-        </div>
-        <div class="column">
-            <a href="index.html">2022</a>
-        </div>
-        <div class="column">
-            <a href="index.html">Furniture</a>
+            <a href="https://www.instagram.com/taejun____e/">Instagram</a>
         </div>
     </div>
 
-    <div class="columns">
-        <div class="column">
-            <a href="index.html">FOT</a>
-        </div>
-        <div class="column">
-            <a href="index.html">2022</a>
-        </div>
-        <div class="column">
-            <a href="index.html">Electric</a>
-        </div>
-    </div>
 
-    <div class="columns">
-        <div class="column">
-            <a href="index.html">ON AIR</a>
-        </div>
-        <div class="column">
-            <a href="index.html">2021</a>
-        </div>
-        <div class="column">
-            <a href="index.html">Signage</a>
-        </div>
-    </div>
 
-      <footer>
-          ©2024 Taejune Youn. All rights reserved.
-      </footer>
+    <footer>
+        ©2024 Taejune Youn. All rights reserved.
+    </footer>
 
-      <script>
-          document.getElementById('mainLink').addEventListener('click', () => window.location.href = 'index.html');
-          document.getElementById('infoLink').addEventListener('click', () => window.open('info.html', '_blank'));
-      </script>
-  </body>
-  </html>
+    <script>
+        document.getElementById('mainLink').addEventListener('click', () => window.location.href = 'index.html');
+        document.getElementById('infoLink').addEventListener('click', () => window.open('index.html', '_blank'));
+    </script>
+</body>
+</html>
