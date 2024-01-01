@@ -2,10 +2,12 @@ html {
   height: 100%;
   width: 100%;
   /*텍스트 선택 불가*/
-  -webkit-user-select: none !important; 
-  -moz-user-select: -moz-none !important;
-  -ms-user-select: none !important;
-  user-select: none !important;
+  div{ -webkit-touch-callout: none;
+     user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     -webkit-user-select: none;
   }
+    }
 }
 
