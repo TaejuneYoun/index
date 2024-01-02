@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta property="og:title" content="Taejune Youn">
@@ -43,7 +44,8 @@
             margin: 0px 0 0px 0px;
         }
 
-        header h1, header #infoLink {
+        header h1,
+        header #infoLink {
             cursor: pointer;
             margin: 0;
         }
@@ -55,12 +57,13 @@
         }
 
         .columns {
-            justify-content: flex-start; /* Fixed typo */
+            display: flex;
+            justify-content: space-between;
             margin-top: 0px;
         }
 
         .column {
-            flex: 1em;
+            flex: 1;
             text-align: left;
             font-size: 30pt;
             width: 100%;
@@ -83,38 +86,20 @@
             text-align: left;
             padding: 10px 0;
         }
+
         /* 미디어 쿼리 추가 */
         @media screen and (max-width: 600px) {
             header {
                 padding: 0;
             }
 
-            .slider {
-                height: flex;
-                width: 100%;
-                overflow: hidden;
-                position: relative;
-                height: 300px;
-                margin: 20px 0 0 0;
-                align-items: top;
-                justify-content: left;
-                img {
-                    width: 100%;
-                    height: flex-wrap: ;;
-                    object-fit: cover; // maintaining its original ratio.
-                }
-            }
-
             .columns {
                 flex-direction: column;
-            }
-
-            header #infoLink {
-                display: none;
             }
         }
     </style>
 </head>
+
 <body>
     <header>
         <h1 id="mainLink">Taejune Youn</h1>
@@ -125,30 +110,26 @@
     <div class="bundle" data-aos="fade-up">
         <img class="project-main-img" src="file/favicon-32x32.png" alt="test-img" onerror="this.style.display='none';">
     </div>
-  
+
     <div style="position: absolute; top: 0; left: 0; text-align: left;">
-        <br>   
-        <br> 
+        <br>
+        <br>
         <br>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="#1c225e" width="64px" height="64px">
-            <circle cx="32" cy="32" r="32"/>
+            <circle cx="32" cy="32" r="32" />
         </svg>
     </div>
-  
+
     <div class="columns">
         <div class="column">
-            <br><br><br>Industrial Designer, based in Seoul.<br>
-            2015-present<br><br> 
-            —<br>  
-            As a designer, I pay attention to a variety of expressions, from everyday experiences like red brick row houses and signage found while walking down the street to unfamiliar stories from different cultural backgrounds. 
-            <br><br>
-            My works include stories from the past to those that envision the distant future. The collected narratives serve as constant hints for solving immediate and challenging problems.
-            <br><br>
-            In my portfolio, you will find traces of stories gathered and reflections on applying hints to create more diverse and comfortable environments. 
-            <br><br>
-            Beyond just the work itself, I am exploring new paths through conversations with people in various cultures, seeking new avenues that I have not experienced before.<br>
-            — 
-            <br><br><br>
+            <br><br><br>Industrial Designer, based in Seoul.<br> 2015-present<br><br> —<br> As a designer, I pay
+            attention to a variety of expressions, from everyday experiences like red brick row houses and signage found
+            while walking down the street to unfamiliar stories from different cultural backgrounds. <br><br> My works
+            include stories from the past to those that envision the distant future. The collected narratives serve as
+            constant hints for solving immediate and challenging problems. <br><br> In my portfolio, you will find traces
+            of stories gathered and reflections on applying hints to create more diverse and comfortable environments.
+            <br><br> Beyond just the work itself, I am exploring new paths through conversations with people in various
+            cultures, seeking new avenues that I have not experienced before.<br> — <br><br><br>
         </div>
     </div>
 
@@ -181,7 +162,7 @@
             <a href="https://www.instagram.com/taejune____insights/">Instagram(Photograph)</a>
         </div>
     </div>
-    
+
     <footer>
         ©2024 Taejune Youn. All rights reserved.
     </footer>
@@ -190,4 +171,5 @@
         document.getElementById('mainLink').addEventListener('click', () => window.location.href = 'index.html');
     </script>
 </body>
+
 </html>
