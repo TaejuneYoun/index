@@ -681,6 +681,38 @@ letter-spacing: -0.032rem;
     padding-right: 0;
   }
 
+  @media screen and (max-width: 600px) {
+            header {
+                padding: 0;
+            }
+
+            .slider {
+                height: flex;
+                width: 100%;
+                overflow: hidden;
+                position: relative;
+                height: 300px;
+                margin: 20px 0 0 0;
+                align-items: top;
+                justify-content: left;
+                img {
+                    width: 100%;
+                    height: flex-wrap: ;;
+                    object-fit: cover; // maintaining its original ratio.
+                }
+            }
+
+            .columns {
+                flex-direction: column;
+            }
+            .column:nth-child(2),
+            .column:nth-child(3) {
+                display: none;
+            }
+            header #infoLink {
+                display: none;
+            }
+        }
   /* ---------------------------------------------------- */
   footer, .footer {
     position: relative;
