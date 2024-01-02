@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta property="og:title" content="Taejune Youn">
@@ -93,10 +92,29 @@
                 padding: 0;
             }
 
+            .slider {
+                height: flex;
+                width: 100%;
+                overflow: hidden;
+                position: relative;
+                height: 300px;
+                margin: 20px 0 0 0;
+                align-items: top;
+                justify-content: left;
+                img {
+                    width: 100%;
+                    height: flex-wrap: ;;
+                    object-fit: cover; // maintaining its original ratio.
+                }
+            }
+
             .columns {
                 flex-direction: column;
             }
-        }
+            .column:nth-child(2),
+            .column:nth-child(3) {
+                display: none;
+            }
     </style>
 </head>
 
