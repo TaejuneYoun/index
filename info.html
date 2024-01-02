@@ -8,7 +8,7 @@
     <meta property="og:type" content="article">
     <meta property="og:image" content="https://raw.githubusercontent.com/TaejuneYoun/index/main/file/1.png">
     <meta property="og:imagewidth" content="200">
-    <meta property="og:imagehight" content="200">
+    <meta property="og:imageheight" content="200">
     <meta property="og:imagetype" content="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -55,7 +55,7 @@
         }
 
         .columns {
-            justify-content: left;
+            justify-content: flex-start; /* Fixed typo */
             margin-top: 0px;
         }
 
@@ -116,47 +116,55 @@
     <hr class="line">
 
     <div class="bundle" data-aos="fade-up">
-      <img class="project-main-img" src="file/favicon-32x32.png" alt="test-img" onerror="this.style.display='none';">
+        <img class="project-main-img" src="file/favicon-32x32.png" alt="test-img" onerror="this.style.display='none';">
     </div>
-    
-      <div class="columns">
-     <div class="column">
-      <br>   <br> 
-      <br>
-      Industrial Designer, based in Seoul.      <br>
-      2015-present
-      <br> 
-      <br> 
-      — 
-      <br>  
-      As a designer, I pay attention to a variety of expressions, from everyday experiences like red brick row houses and signage found while walking down the street to unfamiliar stories from different cultural backgrounds. 
+  
+  <div style="position: absolute; top: 0; left: 0; text-align: left;">
+      <br>   
       <br> 
       <br>
-      My works include stories from the past to those that envision the distant future. The collected narratives serve as constant hints for solving immediate and challenging problems.
-      <br> 
-      <br> 
-       In my portfolio, you will find traces of stories gathered and reflections on applying hints to create more diverse and comfortable environments. 
-      <br> 
-      <br> 
-      Beyond just the work itself, I am exploring new paths through conversations with people in various culture, seeking new avenues that I have not experienced before.
-      <br>
-      — 
-      <br> 
-      <br>
- 
-      <br>
-    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="#1c225e" width="64px" height="64px">
+          <circle cx="32" cy="32" r="32"/>
+      </svg>
   </div>
+  
+    <div class="columns">
+        <div class="column">
+            <br>   <br> 
+            <br>
+            Industrial Designer, based in Seoul.      <br>
+            2015-present
+            <br> 
+            <br> 
+            — 
+            <br>  
+            As a designer, I pay attention to a variety of expressions, from everyday experiences like red brick row houses and signage found while walking down the street to unfamiliar stories from different cultural backgrounds. 
+            <br> 
+            <br>
+            My works include stories from the past to those that envision the distant future. The collected narratives serve as constant hints for solving immediate and challenging problems.
+            <br> 
+            <br> 
+            In my portfolio, you will find traces of stories gathered and reflections on applying hints to create more diverse and comfortable environments. 
+            <br> 
+            <br> 
+            Beyond just the work itself, I am exploring new paths through conversations with people in various cultures, seeking new avenues that I have not experienced before.
+            <br>
+            — 
+            <br> 
+            <br>
+            <br>
+        </div>
+    </div>
 
     <div class="columns">
         <div class="column">
             <a href="https://www.behance.net/ytj1214a201">Behance</a>
         </div>
     </div>
-  
+
     <div class="columns">
         <div class="column">
-          <a href="mailto:"Steveyoun@kookmin.ac.kr">Mail</a>
+            <a href="mailto:Steveyoun@kookmin.ac.kr">Mail</a> <!-- Fixed email link -->
         </div>
     </div>
 
@@ -171,9 +179,6 @@
             <a href="https://www.instagram.com/taejun____e/">Instagram</a>
         </div>
     </div>
-
-
-
 
     <footer>
         ©2024 Taejune Youn. All rights reserved.
