@@ -2,14 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="Taejune Youn">
     <meta property="og:description" content="Industrial Designer, based in Seoul.">
-    <meta property="og:site_name" content="Taejune Youn">
-    <meta property="og:type" content="article">
     <meta property="og:image" content="https://raw.githubusercontent.com/TaejuneYoun/index/main/file/1.png">
-    <meta property="og:imagewidth" content="200">
-    <meta property="og:imageheight" content="200">
-    <meta property="og:imagetype" content="image/png">
+    <title>Taejune Youn</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&display=swap" rel="stylesheet">
@@ -40,15 +37,36 @@
             align-items: center;
             border-bottom: 3px solid #000;
             z-index: 1000;
-            margin: 0px 0 0px 0px;
+            margin: -20px 0 0px 0px;
         }
 
-        header h1,
-        header #infoLink {
+        header h1, header #infoLink {
             cursor: pointer;
             margin: 0;
         }
 
+        .slider {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            height: 600px;
+            margin: 20px 0 0 0;
+            align-items: self-position;
+            justify-content: content-position;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover; // maintaining its original ratio.
+            }
+        }
+
+        .slides {
+            display: none;
+        }
+
+        .slide {
+            min-width: 0%;
+        }
 
         .line {
             border-top: 2px solid #000;
@@ -57,12 +75,12 @@
 
         .columns {
             display: flex;
-            justify-content: space-between;
+            justify-content: center
             margin-top: 0px;
         }
 
         .column {
-            flex: 1;
+            flex: 1em;
             text-align: left;
             font-size: 30pt;
             width: 100%;
@@ -87,103 +105,132 @@
         }
 
         /* 미디어 쿼리 추가 */
-     @media screen and (max-width: 600px) {
-        header {
-             padding: 0;
-         }
+        @media screen and (max-width: 600px) {
+            header {
+                padding: 0;
+            }
 
-        .slider {
-            height: flex;
-            width: 100%;
-            overflow: hidden;
-            position: relative;
-            height: 300px;
-            margin: 20px 0 0 0;
-            align-items: top;
-            justify-content: left;
-            img {
-                 width: 100%;
-                height: flex-wrap: ;;
-                object-fit: cover; // maintaining its original ratio.
+            .slider {
+                height: 0px;
+                width: 100%;
+                overflow: hidden;
+                position: relative;
+                margin: 20px 0 0 0px;
+                align-items: top;
+                justify-content: left;
+                img {
+                    width: 100%;
+                    height: flex-wrap: ;;
+                    object-fit: cover; // maintaining its original ratio.
+                }
+            }
+
+            .columns {
+                flex-direction: column;
+            }
+            .column:nth-child(2),
+            .column:nth-child(3) {
+                display: none;
+            }
+            header #infoLink {
+                display: none;
             }
         }
-
-        .columns {
-             flex-direction: column;
-         }
-         .column:nth-child(2),
-         .column:nth-child(3) {
-            display: none;
-         }
     </style>
 </head>
-
 <body>
     <header>
         <h1 id="mainLink">Taejune Youn</h1>
+        <h1 id="infoLink">Info</h1>
     </header>
 
-    <hr class="line">
-
-    <div style="position: absolute; top: 0; left: 0; text-align: left;">
-        <br>
-        <br>
-        <br>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="#1c225e" width="64px" height="64px">
-            <circle cx="32" cy="32" r="32" />
-        </svg>
-    </div>
-
-    <div class="columns">
-        <div class="column">
-            <br><br><br>Industrial Designer, based in Seoul.<br> 2015-present<br><br> —<br> As a designer, I pay
-            attention to a variety of expressions, from everyday experiences like red brick row houses and signage found
-            while walking down the street to unfamiliar stories from different cultural backgrounds. <br><br> My works
-            include stories from the past to those that envision the distant future. The collected narratives serve as
-            constant hints for solving immediate and challenging problems. <br><br> In my portfolio, you will find traces
-            of stories gathered and reflections on applying hints to create more diverse and comfortable environments.
-            <br><br> Beyond just the work itself, I am exploring new paths through conversations with people in various
-            cultures, seeking new avenues that I have not experienced before.<br> — <br><br><br>
+    <div class="slider">
+        <div class="slides">
+          <img class="slide" src="" alt="Slide 1">
+          <img class="slide" src="" alt="Slide 2">
+          <img class="slide" src="" alt="Slide 3">
+          <img class="slide" src="" alt="Slide 4">
+          <img class="slide" src="" alt="Slide 5">
         </div>
     </div>
 
     <div class="columns">
         <div class="column">
-            <a href="https://www.behance.net/ytj1214a201">Behance</a>
+            <br>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="#1c225e" width="64px" height="64px">
+                <circle cx="32" cy="32" r="32" />
+            </svg>
+          <a href=""><br>Industrial Designer, based in Seoul.
+            <br> 2015-present
+            <br><br>—
+            <br> As a designer, I pay attention to a variety of expressions, from everyday experiences like red brick row houses and signage found while walking down the street to unfamiliar stories from different cultural backgrounds.
+            <br><br> My worksinclude stories from the past to those that envision the distant future. The collected narratives serve as constant hints for solving immediate and challenging problems. 
+            <br><br> In my portfolio, you will find traces of stories gathered and reflections on applying hints to create more diverse and comfortable environments.
+            <br><br> Beyond just the work itself, I am exploring new paths through conversations with people in various cultures, seeking new avenues that I have not experienced before.
+            <br>—
+            <br><br>
+          </a>
         </div>
     </div>
 
     <div class="columns">
         <div class="column">
-            <a href="mailto:Steveyoun@kookmin.ac.kr">Mail</a> <!-- Fixed email link -->
+          <a href="mailto:Steveyoun@kookmin.ac.kr">Mail</a>
         </div>
     </div>
 
     <div class="columns">
         <div class="column">
-            <a href="https://www.linkedin.com/in/taejuneyoun/">Linkedin</a>
+          <a href="https://www.linkedin.com/in/taejuneyoun/">Linkedin</a>
         </div>
     </div>
 
     <div class="columns">
         <div class="column">
-            <a href="https://www.instagram.com/taejun____e/">Instagram</a>
+          <a href="https://www.instagram.com/taejun____e/">Instagram</a>
+          <br><br>
         </div>
     </div>
-
-    <div class="columns">
-        <div class="column">
-            <a href="https://www.instagram.com/taejune____insights/">Instagram(Photograph)</a>
-        </div>
-    </div>
-
+  
+  
     <footer>
         ©2024 Taejune Youn. All rights reserved.
     </footer>
 
     <script>
         document.getElementById('mainLink').addEventListener('click', () => window.location.href = 'index.html');
-    </script>
-</body>
+        document.getElementById('infoLink').addEventListener('click', () => window.location.href = 'info.html');
 
+        // 모바일 버전에서 Taejune Youn 클릭 시 info.html로 이동
+        if (window.innerWidth <= 600) {
+            document.getElementById('mainLink').addEventListener('click', () => window.location.href = 'info.html');
+        }
+    </script>
+  <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          var imageNames = ["1.png", "2.png", "3.png", "4.png", "5.png", "6.png"];
+
+          function getRandomImageName() {
+              var randomIndex = Math.floor(Math.random() * imageNames.length);
+              return imageNames[randomIndex];
+          }
+
+          function updateImages() {
+              var slides = document.querySelector(".slides");
+              var images = document.querySelectorAll(".slide");
+
+              images.forEach(function (image, index) {
+                  var imageName = getRandomImageName();
+                  var imageUrl = "https://raw.githubusercontent.com/TaejuneYoun/index/main/file/" + imageName;
+                  image.src = imageUrl;
+                  image.alt = "Slide " + (index + 1);
+              });
+
+              slides.style.transform = "translateX(0)";
+          }
+
+          updateImages();
+      });
+  </script>
+</body>
 </html>
