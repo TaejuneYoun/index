@@ -17,7 +17,7 @@
             color: #000;
             text-align: center;
             padding: 0px 0px;
-            display: 570;
+            display: 600;
             justify-content: space-between;
             align-items: center;
             border-bottom: 3px solid #000;
@@ -34,9 +34,8 @@
             width: 100%;
             overflow: hidden;
             position: center;
-            height: flex;
+            height: 600;
             margin: 20px 0 0 0;
-            border-bottom: 3px solid #000;
             align-items: center;
             justify-content: content-position;
             img {
