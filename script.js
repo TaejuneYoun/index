@@ -1,6 +1,6 @@
 /*------------------------------------------------------------------------------------------------------------------*/
 // Slider
-    document.addEventListener("DOMContentLoaded", function () {
+      document.addEventListener("DOMContentLoaded", function () {
           var imageNames = ["1.png", "2.png", "3.png", "4.png", "5.png", "6.png"];
 
           function getRandomImageName() {
@@ -24,11 +24,15 @@
 
           updateImages();
       });
-
 /*------------------------------------------------------------------------------------------------------------------*/
 // Slider
+    <script>
         document.getElementById('mainLink').addEventListener('click', () => window.location.href = 'index.html');
         document.getElementById('infoLink').addEventListener('click', () => window.location.href = 'info.html');
 
-
+        // 모바일 버전에서 Taejune Youn 클릭 시 info.html로 이동
+        if (window.innerWidth <= 600) {
+            document.getElementById('mainLink').addEventListener('click', () => window.location.href = 'info.html');
+        }
+    </script>
 
