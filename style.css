@@ -1,123 +1,123 @@
-   body {
-            font-family: 'Bricolage Grotesque', sans-serif;
-            cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%231C225E" width="64px" height="64px"><circle cx="12" cy="12" r="10"/></svg>'), auto;
-            margin: auto;
-            padding: auto;
-            background-color: #fff;
-            color: #000;
-            text-align: auto;
-            font-size: 15pt;
-            transition: margin-top 0.1s ease;
-        }
+body {
+ font-family: 'Bricolage Grotesque', sans-serif;
+ cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%231C225E" width="64px" height="64px"><circle cx="12" cy="12" r="10"/></svg>'), auto;
+ margin: auto;
+ padding: auto;
+ background-color: #fff;
+ color: #000;
+ text-align: auto;
+ font-size: 15pt;
+ transition: margin-top 0.1s ease;
+}
 
-        header {
-            position: fixed;
-            width: 100%;
-            background-color: #fff;
-            color: #000;
-            text-align: center;
-            padding: 0px 0px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 3px solid #000;
-            z-index: 1000;
-            margin: -20px 0 0px 0px;
-        }
+header {
+ position: fixed;
+ width: 100%;
+ background-color: #fff;
+ color: #000;
+ text-align: center;
+ padding: 0px 0px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ border-bottom: 3px solid #000;
+ z-index: 1000;
+ margin: -20px 0 0px 0px;
+}
 
-        header h1, header #infoLink {
-            cursor: pointer;
-            margin: 0;
-        }
+header h1, header #infoLink {
+ cursor: pointer;
+ margin: 0;
+}
 
-        .slider {
-            width: 100%;
-            overflow: hidden;
-            position: relative;
-            height: 0px;
-            margin: 20px 0 0 0;
-            align-items: self-position;
-            justify-content: content-position;
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover; // maintaining its original ratio.
+.slider {
+ width: 100%;
+ overflow: hidden;
+ position: relative;
+ height: 0px;
+ margin: 20px 0 0 0;
+ align-items: self-position;
+ justify-content: content-position;
+ img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; // maintaining its original ratio.
+ }
+}
+
+.slides {
+ height: 0px;
+}
+
+.slide {
+ min-width: 0%;
+}
+
+.line {
+ border-top: 2px solid #000;
+ margin-top: 0px;
+}
+
+.columns {
+ display: flex;
+ justify-content: center
+ margin-top: 0px;
+}
+
+.column {
+ flex: 1em;
+ text-align: left;
+ font-size: 30pt;
+ width: 100%;
+ margin-bottom: 0px;
+}
+
+.column a {
+ text-decoration: none;
+ color: #000;
+ transition: filter 0.3s ease;
+}
+
+.column a:hover {
+ filter: brightness(70%);
+}
+
+footer {
+ margin-top: 10px;
+ border-top: 3px solid #000;
+ text-align: left;
+ padding: 10px 0;
+}
+
+/* 미디어 쿼리 추가 */
+@media screen and (max-width: 600px) {
+   header {
+      padding: 0;
+   }
+   .slider {
+      height: 0px;
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      margin: 20px 0 0 0px;
+      align-items: top;
+      justify-content: left;
+      img {
+         width: 100%;
+         height: flex-wrap: ;;
+         object-fit: cover; // maintaining its original ratio.
+      }
+   }
+
+   .columns {
+      flex-direction: column;
+   }
+   .column:nth-child(2),
+   .column:nth-child(3) {
+      display: none;
+   }
+   header #infoLink {
+      display: none;
             }
-        }
-
-        .slides {
-            height: 0px;
-        }
-
-        .slide {
-            min-width: 0%;
-        }
-
-        .line {
-            border-top: 2px solid #000;
-            margin-top: 0px;
-        }
-
-        .columns {
-            display: flex;
-            justify-content: center
-            margin-top: 0px;
-        }
-
-        .column {
-            flex: 1em;
-            text-align: left;
-            font-size: 30pt;
-            width: 100%;
-            margin-bottom: 0px;
-        }
-
-        .column a {
-            text-decoration: none;
-            color: #000;
-            transition: filter 0.3s ease;
-        }
-
-        .column a:hover {
-            filter: brightness(70%);
-        }
-
-        footer {
-            margin-top: 10px;
-            border-top: 3px solid #000;
-            text-align: left;
-            padding: 10px 0;
-        }
-
-        /* 미디어 쿼리 추가 */
-        @media screen and (max-width: 600px) {
-            header {
-                padding: 0;
-            }
-
-            .slider {
-                height: 0px;
-                width: 100%;
-                overflow: hidden;
-                position: relative;
-                margin: 20px 0 0 0px;
-                align-items: top;
-                justify-content: left;
-                img {
-                    width: 100%;
-                    height: flex-wrap: ;;
-                    object-fit: cover; // maintaining its original ratio.
-                }
-            }
-
-            .columns {
-                flex-direction: column;
-            }
-            .column:nth-child(2),
-            .column:nth-child(3) {
-                display: none;
-            }
-            header #infoLink {
-                display: none;
-            }
+   
         }
