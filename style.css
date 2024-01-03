@@ -31,10 +31,10 @@
         }
 
         .slider {
-            width: 100%;
+            width: 70%;
             overflow: hidden;
-            position: relative;
-            height: 720px;
+            position: center;
+            height: 600px;
             margin: 20px 0 0 0;
             border-bottom: 3px solid #000;
             align-items: center;
