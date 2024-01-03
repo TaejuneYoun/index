@@ -31,7 +31,7 @@
         }
 
         .slider {
-            width: 70%;
+            width: 100%;
             overflow: hidden;
             position: center;
             height: 600px;
@@ -53,7 +53,7 @@
         }
 
         .slide {
-            min-width: 150%;
+            min-width: 100%;
         }
 
         .line {
