@@ -29,3 +29,6 @@
 // Slider
         document.getElementById('mainLink').addEventListener('click', () => window.location.href = 'index.html');
         document.getElementById('infoLink').addEventListener('click', () => window.location.href = 'info.html');
+
+
+
