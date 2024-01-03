@@ -40,8 +40,8 @@
             align-items: center;
             justify-content: content-position;
             img {
-                width: 100%;
-                height: 100%;
+                width: relative;
+                height: relative;
                 object-fit: cover; // maintaining its original ratio.
             }
         }
