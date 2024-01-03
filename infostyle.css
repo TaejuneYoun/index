@@ -90,7 +90,7 @@ footer {
 }
 
 /* 미디어 쿼리 추가 */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 576px) {
    header {
       padding: 0;
    }
