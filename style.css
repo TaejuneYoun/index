@@ -36,6 +36,7 @@
             position: relative;
             height: 600px;
             margin: 20px 0 0 0;
+            border-bottom: 3px solid #000;
             align-items: self-position;
             justify-content: content-position;
             img {
