@@ -34,7 +34,7 @@ header h1, header #infoLink {
  width: 100%;
  overflow: hidden;
  position: relative;
- height: 0px;
+ height: 600px;
  margin: 20px 0 0 0;
  align-items: self-position;
  justify-content: content-position;
@@ -46,11 +46,11 @@ header h1, header #infoLink {
 }
 
 .slides {
- height: 0px;
+ height: 600px;
 }
 
 .slide {
- min-width: 0%;
+ min-width: 100%;
 }
 
 .line {
