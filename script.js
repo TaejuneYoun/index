@@ -14,7 +14,7 @@
 
               images.forEach(function (image, index) {
                   var imageName = getRandomImageName();
-                  var imageUrl = "https://raw.githubusercontent.com/TaejuneYoun/index/main/file/" + imageName;
+                  var imageUrl = "https://raw.githubusercontent.com/TaejuneYoun/index/main/assets/" + imageName;
                   image.src = imageUrl;
                   image.alt = "Slide " + (index + 1);
               });
