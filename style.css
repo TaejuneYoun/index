@@ -17,7 +17,7 @@
             color: #000;
             text-align: center;
             padding: 0px 0px;
-            display: 600;
+            display: flex;
             justify-content: space-between;
             align-items: center;
             border-bottom: 3px solid #000;
@@ -33,16 +33,15 @@
         .slider {
             width: 100%;
             overflow: hidden;
-            position: center;
-            height: 576;
-            margin: 0 0 0 0;
-            align-items: center;
+            position: relative;
+            height: 600px;
+            margin: 20px 0 0 0;
+            align-items: self-position;
             justify-content: content-position;
             img {
-                width: relative;
-                height: relative;
-                object-fit: cover;
-                margin: 0 auto; // maintaining its original ratio.
+                width: 100%;
+                height: 100%;
+                object-fit: cover; // maintaining its original ratio.
             }
         }
 
@@ -52,7 +51,7 @@
         }
 
         .slide {
-            min-width: 100%;
+            min-width: 110%;
         }
 
         .line {
@@ -101,6 +100,8 @@
                 height: flex;
                 width: 100%;
                 overflow: hidden;
+                position: center;
+                height: 600px;
                 margin: 20px 0 0 0;
                 align-items: top;
                 justify-content: center;
@@ -111,7 +112,7 @@
                 }
         }
         
-        @media screen and (max-width: 576px) {
+        @media screen and (max-width: 600px) {
             header {
                 padding: 0;
             }
