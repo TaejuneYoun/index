@@ -29,8 +29,9 @@
         header h1, header #infoLink {
             cursor: pointer;
             margin: 0;
+            font-weight: 500;
+            font-size: 40px;
         }
-
         .slider {
             width: 100%;
             overflow: hidden;
