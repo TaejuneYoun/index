@@ -10,6 +10,7 @@
             transition: margin-top 0.1s ease;
         }
 
+
         header {
             position: fixed;
             width: 100%;
@@ -89,6 +90,16 @@
             border-top: 3px solid #000;
             text-align: left;
             padding: 10px 0;
+        }
+
+        ::-moz-selection {
+           background: #1C225E;
+           color: #fff;
+        }
+
+        ::selection {
+           background: #1C225E;
+           color: #fff;
         }
 
         /* 미디어 쿼리 추가 */
