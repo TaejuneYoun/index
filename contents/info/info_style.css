@@ -10,7 +10,15 @@
             transition: margin-top 0.1s ease;
             margin: 50px 0 0 0;
         }
+        ::-moz-selection {
+           background: #1C225E;
+           color: #fff;
+        }
 
+        ::selection {
+           background: #1C225E;
+           color: #fff;
+        }
         header {
             position: fixed;
             width: 100%;
