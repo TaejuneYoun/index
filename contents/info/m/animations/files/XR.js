@@ -311,7 +311,7 @@ window.XR = function(X, w, G, Y, wa, D, xa, ya, za, Aa, Ba, L, M, Z, $, Ca, aa, 
         a.preventDefault() ? a.preventDefault() : a.returnValue = u
     }
     var A = "/"
-      , K = "https://raw.githubusercontent.com/TaejuneYoun/index/refs/heads/main/contents/info"
+      , K = "https://raw.githubusercontent.com/TaejuneYoun/index/refs/heads/main/contents/info/m/info"
       , ta = K.lastIndexOf("/");
     0 <= ta && (A = K.substr(0, ta + 1));
     var V = K = u;
