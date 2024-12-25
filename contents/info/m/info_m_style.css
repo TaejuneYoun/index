@@ -51,11 +51,10 @@
         }
 
         footer {
-            margin-top: 10px;
             text-align: left;
             position: absolute;
-            top: 350px;
-            left: 50px;
+            top: 150px;
+            left: 5px;
             width: auto;
             padding: 10px 0;
             z-index: 1000;
