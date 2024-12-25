@@ -1,0 +1,87 @@
+        body {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-weight: 500;
+            font-size: 15pt;
+            cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%231C225E" width="64px" height="64px"><circle cx="12" cy="12" r="10"/></svg>'), auto;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #000;
+            transition: margin-top 0.1s ease;
+            -ms-touch-action: none;
+        }
+
+
+        a {
+            text-decoration-line: underline;
+            color: #000;
+          /*   text-decoration-line: ; */
+          /*   text-decoration-line: overline; */
+          /*   text-decoration-line: line-through; */
+          /*   text-decoration-line: underline line-through overline; */
+          }
+          
+                  
+        .text {
+            font-size: 30px;
+            margin-top: 70px;
+            vertical-align: middle;
+          }
+          
+          .text img {
+            position: absolute;
+            text-align: center;
+            top: 30px;
+            left: 50px;
+            width: 200px;
+          }
+          
+        header {
+            position: fixed;
+            width: 100%;
+            background-color: #fff;
+            color: #000;
+            text-align: center;
+            padding: 0px 0px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid #000;
+            margin: -20px 0 0px 0px;
+        }
+
+        footer {
+            margin-top: 10px;
+            text-align: left;
+            position: absolute;
+            top: 450px;
+            left: 50px;
+            width: 400px;
+            padding: 10px 0;
+            z-index: 1000;
+            text-decoration-line: none;
+        }
+        
+
+        ::-moz-selection {
+           background: #1C225E;
+           color: #fff;
+        }
+
+        ::selection {
+           background: #1C225E;
+           color: #fff;
+        }
+
+        /* 미디어 쿼리 추가 */
+        @media (max-width: 900px) {
+            header {
+                padding: 0;
+            }
+        }
+        
+        @media screen and (max-width: 600px) {
+            header {
+                padding: 0;
+            }
+        }
