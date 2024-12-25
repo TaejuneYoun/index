@@ -5,6 +5,7 @@ body {
  padding: auto;
  background-color: #fff;
  color: #000;
+ text-decoration: none;
  text-align: auto;
  font-size: 15pt;
  transition: margin-top 0.1s ease;
