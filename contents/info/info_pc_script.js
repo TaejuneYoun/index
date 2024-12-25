@@ -2,7 +2,7 @@ var XR;
 
 function initXR() {
   var nameOfDiv = "info_pc";
-  var folderUrl = "https://raw.githubusercontent.com/TaejuneYoun/index/refs/heads/main/contents/info/animations/";
+  var folderUrl = "../contents/info/animations/";
   var viewPortWidth = 1920;
   var viewPortHeight = 1080;
   var backgroundColor = "#FFFFFF";
