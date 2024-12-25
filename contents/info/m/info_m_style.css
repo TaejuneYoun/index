@@ -54,9 +54,9 @@
             margin-top: 10px;
             text-align: left;
             position: absolute;
-            top: 450px;
+            top: 350px;
             left: 50px;
-            width: 400px;
+            width: auto;
             padding: 10px 0;
             z-index: 1000;
             text-decoration-line: none;
