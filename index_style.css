@@ -127,10 +127,6 @@
                     object-fit: cover; // maintaining its original ratio.
                 }
             }
-
-            .columns {
-                flex-direction: column;
-            }
             .column:nth-child(2){
                 display: none;
             }
