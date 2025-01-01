@@ -108,7 +108,7 @@
         }
 
         /* 미디어 쿼리 추가 */
-        @media (max-width: 1030px) {
+        @media screen and (max-width: 1030px) {
                 header {
                         padding: 0;
                 }
