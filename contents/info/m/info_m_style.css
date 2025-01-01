@@ -53,10 +53,10 @@
         footer {
             text-align: left;
             position: absolute;
-            top: 145px;
-            left: 5px;
-            width: 100%;
-            padding: 10px 0;
+            top: 135px;
+            left: 10px;
+            width: 95%;
+            padding: 10px 10px;
             z-index: 1000;
             text-decoration-line: none;
         }
