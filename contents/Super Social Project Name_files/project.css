@@ -4,7 +4,7 @@
   --p3: 10rem 10vw;
 }
 * {
-  cursor: auto;
+  cursor: url(https://raw.githubusercontent.com/designed-realities/Exhibition/main/cursor.png) 5 5, auto;
 }
 a {
   cursor: pointer;
