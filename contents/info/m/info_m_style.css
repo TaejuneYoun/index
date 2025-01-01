@@ -1,5 +1,5 @@
         body {
-            font-family: 'Bricolage Grotesque', sans-serif;
+            font-family: 'Bricolage Grotesque', sans-serif; font-size: 30pt;
             margin: 0;
             padding: 0;
             background-color: #fff;
@@ -7,31 +7,6 @@
             transition: margin-top 0.1s ease;
             -ms-touch-action: none;
         }
-
-
-        a {
-            text-decoration-line: underline;
-            color: #000;
-          /*   text-decoration-line: ; */
-          /*   text-decoration-line: overline; */
-          /*   text-decoration-line: line-through; */
-          /*   text-decoration-line: underline line-through overline; */
-          }
-          
-                  
-        .text {
-            font-size: 50px;
-            margin-top: 70px;
-            vertical-align: middle;
-          }
-          
-          .text img {
-            position: absolute;
-            text-align: center;
-            top: 30px;
-            left: 50px;
-            width: 200px;
-          }
           
         header {
             position: fixed;
