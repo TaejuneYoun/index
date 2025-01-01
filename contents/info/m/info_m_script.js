@@ -21,7 +21,7 @@ function initXR() {
   var addDownScaleGUIButton = false;
   var downloadOnInteraction = false;
   var imageExtension = "jpg";
-  var showLoading = true;
+  var showLoading = false;
   var allowFullscreen = true; // Double-click in desktop browsers for fullscreen.
   var uReverse = false;
   var vReverse = false;
