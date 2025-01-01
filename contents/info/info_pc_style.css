@@ -1,7 +1,7 @@
         body {
             font-family: 'Bricolage Grotesque', sans-serif;
-            font-weight: 500;
-            font-size: 15pt;
+            font-weight: 700;
+            font-size: 17pt;
             cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%231C225E" width="64px" height="64px"><circle cx="12" cy="12" r="10"/></svg>'), auto;
             margin: 0;
             padding: 0;
@@ -51,7 +51,7 @@
         }
 
         footer {
-            margin-top: 10px;
+            margin-top: 0px;
             text-align: left;
             position: absolute;
             top: 30px;
