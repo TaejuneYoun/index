@@ -1,7 +1,10 @@
         body {
-            font-family: 'Bricolage Grotesque', sans-serif;
-            font-weight: 500;
-            font-size: 20pt;
+                font-family: "Bricolage Grotesque", serif;
+                font-optical-sizing: auto;
+                font-weight: 500;
+                font-style: normal;
+                font-variation-settings:
+                        "wdth" 100;
             margin: 0;
             padding: 0;
             background-color: #fff;
