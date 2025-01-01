@@ -53,9 +53,9 @@
         footer {
             text-align: left;
             position: absolute;
-            top: 165px;
+            top: 145px;
             left: 5px;
-            width: auto;
+            width: 100%;
             padding: 10px 0;
             z-index: 1000;
             text-decoration-line: none;
