@@ -1,6 +1,9 @@
         body {
             font-family: 'Bricolage Grotesque', sans-serif;
             cursor: url('../assets/cursor_turn.png'), auto;
+                a:hover, a:active {
+                        cursor: url('../assets/cursor_go.png'), auto;
+                }
             margin: auto;
             padding: auto;
             background-color: #fff;
@@ -10,9 +13,7 @@
             transition: margin-top 0.1s ease;
         }
 
-        a:hover, a:active {
-            cursor: url('../assets/cursor_go.png'), auto;
-        }
+
 
 
         header {
