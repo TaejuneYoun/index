@@ -88,14 +88,9 @@
             filter: brightness(70%);
         }
 
-        footer * {
-                cursor: url('../assets/cursor_turn.png'), auto;
-                                a:hover, a:active {
-                        cursor: url('../assets/cursor_go.png'), auto;
-                }
-        }
 
         footer {
+            cursor: url('../assets/cursor_turn.png'), auto;
             margin-top: 10px;
             border-top: 3px solid #000;
             text-align: left;
