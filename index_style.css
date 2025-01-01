@@ -108,24 +108,35 @@
         }
 
         /* 미디어 쿼리 추가 */
-        @media (max-width: 900px) {
-            header {
-                padding: 0;
-            }
+        @media (max-width: 1030px) {
+                header {
+                        padding: 0;
+                }
 
             .slider {
                 height: 100%;
-                width: flex;
+                width: flex%;
                 overflow: hidden;
-                position: center;
+                position: relative;
                 margin: 20px 0 0 0;
                 align-items: top;
-                justify-content: center;
+                justify-content: left;
                 img {
                     width: 100%;
                     height: flex-wrap: ;;
                     object-fit: cover; // maintaining its original ratio.
                 }
+            }
+
+            .columns {
+                flex-direction: column;
+            }
+            .column:nth-child(2){
+                display: none;
+            }
+            header #infoLink {
+                display: none;
+            }
         }
         
         @media screen and (max-width: 600px) {
