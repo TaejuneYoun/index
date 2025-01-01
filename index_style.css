@@ -1,6 +1,8 @@
         body {
             font-family: 'Bricolage Grotesque', sans-serif;
-            cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%231C225E" width="64px" height="64px"><circle cx="12" cy="12" r="10"/></svg>'), auto;
+                
+ // cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%231C225E" width="64px" height="64px"><circle cx="12" cy="12" r="10"/></svg>'), auto;
+            cursor: url('../assets/cursor_turn.png'), auto;
             margin: auto;
             padding: auto;
             background-color: #fff;
@@ -10,6 +12,9 @@
             transition: margin-top 0.1s ease;
         }
 
+        a:hover, a:active {
+            cursor: url('../assets/cursor_go.png'), auto;
+        }
 
         header {
             position: fixed;
