@@ -22,7 +22,6 @@ function initXR() {
   var downloadOnInteraction = false;
   var imageExtension = "jpg";
   var showLoading = true;
-  var loadingIcon = "info_resize_01.png"; // Set to empty string for default icon.
   var allowFullscreen = true; // Double-click in desktop browsers for fullscreen.
   var uReverse = false;
   var vReverse = false;
