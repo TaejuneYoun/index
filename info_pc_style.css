@@ -13,9 +13,7 @@
             transition: margin-top 0.1s ease;
         }
 
-        footer * {
-                cursor: url('../assets/cursor_turn.png'), auto;
-        }
+
 
 
         header {
@@ -91,6 +89,13 @@
 
         .column a:hover {
             filter: brightness(70%);
+        }
+
+        footer * {
+                cursor: url('../assets/cursor_turn.png'), auto;
+                                a:hover, a:active {
+                        cursor: url('../assets/cursor_go.png'), auto;
+                }
         }
 
         footer {
