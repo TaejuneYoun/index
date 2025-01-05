@@ -170,5 +170,10 @@
                 background-size: cover; /* 이미지 크기를 컨테이너에 맞게 조정 */
                 background-position: right; /* 이미지 가운데 정렬 */
                 background-repeat: no-repeat;
-            }
+                       
+                /* 텍스트 숨김 */
+                text-indent: -9999px; /* 텍스트를 화면에서 벗어나게 함 */
+                overflow: hidden; /* 텍스트가 보이지 않도록 처리 */
+                white-space: nowrap; /* 텍스트 줄바꿈 방지 */     
+                    }
         }
