@@ -38,7 +38,19 @@
     <div id="info_pc"></div>
     <script type="text/javascript" src="../contents/info/animations/files/XR.js"></script>
     <script type="text/javascript" src="../contents/info/info_pc_script.js"></script>
-    
+     <script>
+        function redirectBasedOnScreenSize() {
+            const currentURL = window.location.href;
+            const isMobile = window.matchMedia('(max-width: 690px)').matches;
+
+            if (currentURL.includes('info_pc.html') && isMobile) {
+                window.location.href = 'https://taejuneyoun.xyz/info_m.html';
+            }
+        }
+
+        window.addEventListener('load', redirectBasedOnScreenSize);
+        window.addEventListener('resize', redirectBasedOnScreenSize);
+    </script>
   </body>
 
   <!------------------------------------------------------------------------------------------------------------------>
