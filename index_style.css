@@ -132,9 +132,6 @@
             .column:nth-child(2){
                 display: none;
             }
-            header #infoLink {
-                display: none;
-            }
         }
         
         @media screen and (max-width: 690px) {
@@ -164,7 +161,14 @@
             .column:nth-child(3) {
                 display: none;
             }
+            /* #infoLink에 이미지 추가 */
             header #infoLink {
-                display: none;
+                display: block; /* 기존 display: none 제거 */
+                width: 24px; /* 이미지의 크기에 맞게 조정 */
+                height: 24px;
+                background-image: url('../assets/Icon_info.png');
+                background-size: cover; /* 이미지 크기를 컨테이너에 맞게 조정 */
+                background-position: right; /* 이미지 가운데 정렬 */
+                background-repeat: no-repeat;
             }
         }
