@@ -56,7 +56,7 @@
         }
 
         footer {
-            text-align: left;
+            text-align: center;
             position: absolute;
             top: 135px;
             left: 10px;
@@ -75,17 +75,4 @@
         ::selection {
            background: #1C225E;
            color: #fff;
-        }
-
-        /* 미디어 쿼리 추가 */
-        @media (max-width: 900px) {
-            header {
-                padding: 0;
-            }
-        }
-        
-        @media screen and (max-width: 600px) {
-            header {
-                padding: 0;
-            }
         }
