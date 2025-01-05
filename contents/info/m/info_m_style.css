@@ -86,3 +86,18 @@
            background: #1C225E;
            color: #fff;
         }
+
+/* 미디어쿼리: 화면 폭이 360px보다 클 경우 */
+@media screen and (min-width: 361px) {
+    footer {
+        top: 120px;
+    }
+}
+
+/* 미디어쿼리: 화면 폭이 428px보다 클 경우 */
+@media screen and (min-width: 429px) {
+    footer {
+        top: 150px;
+    }
+}
+
