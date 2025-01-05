@@ -168,7 +168,7 @@
                 height: 32px;
                 background-image: url('../assets/Icon_info.png');
                 background-size: cover; /* 이미지 크기를 컨테이너에 맞게 조정 */
-                background-position: right; /* 이미지 가운데 정렬 */
+                background-position: center; /* 이미지 가운데 정렬 */
                 background-repeat: no-repeat;
                        
                 /* 텍스트 숨김 */
