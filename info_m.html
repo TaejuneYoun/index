@@ -27,6 +27,23 @@
     <div id="info_m"></div>
     <script type="text/javascript" src="../contents/info/m/animations/files/XR.js"></script>
     <script type="text/javascript" src="../contents/info/m/info_m_script.js"></script>
+    <script>
+    function redirectBasedOnScreenSize() {
+        const currentURL = window.location.href;
+        const isDesktop = window.matchMedia('(min-width: 691px)').matches;
+
+        // 현재 URL이 info_m.html이고, 데스크탑 화면인 경우 PC 페이지로 리디렉션
+        if (currentURL.includes('info_m.html') && isDesktop) {
+            window.location.href = 'https://taejuneyoun.xyz/info_pc.html';
+        }
+    }
+
+    // 페이지 로드 시 리디렉션 확인
+    window.addEventListener('load', redirectBasedOnScreenSize);
+
+    // 화면 크기 변경 시 리디렉션 확인
+    window.addEventListener('resize', redirectBasedOnScreenSize);
+</script>
   </body>
 
   <!------------------------------------------------------------------------------------------------------------------>
