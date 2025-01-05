@@ -58,12 +58,47 @@
   <!------------------------------------------------------------------------------------------------------------------>
   <!------------------------------------------------------------------------------------------------------------------>
   <!-- FOOTER -->
-    
-  <footer>
-    <a href="https://taejuneyoun.xyz/index.html">©2015-2025 Taejune Youn. <br> Industrial designer, based in Seoul.</a>
-    <br><br>
-    <a href="mailto:﻿"taejuneyoun@gmail.com">taejuneyoun@gmail.com</a>
-    <br><a href="https://www.linkedin.com/in/taejuneyoun/">Linkedin</a>
+    <footer id="footer">
+        <a href="https://taejuneyoun.xyz/index.html">©2015-2025 Taejune Youn. <br> Industrial designer, based in Seoul.</a>
+        <br><br>
+        <a href="mailto:﻿"taejuneyoun@gmail.com">taejuneyoun@gmail.com</a>
+        <br><a href="https://www.linkedin.com/in/taejuneyoun/">Linkedin</a>
+    </footer>
+
+    <script>
+        function updateFooterBasedOnScreenSize() {
+            const footer = document.getElementById("footer");
+            const screenWidth = window.innerWidth;
+
+            if (screenWidth < 700) {
+                footer.innerHTML = `
+                    <a href="https://taejuneyoun.xyz/index.html">©2015-2025 Taejune Youn.</a>
+                    <br><a href="https://www.linkedin.com/in/taejuneyoun/">Linkedin</a>
+                `;
+            } else if (screenWidth < 1050) {
+                footer.innerHTML = `
+                    <a href="https://taejuneyoun.xyz/index.html">©2015-2025 Taejune Youn.</a>
+                    <br>
+                    <a href="mailto:﻿"taejuneyoun@gmail.com">taejuneyoun@gmail.com</a>
+                    <br><a href="https://www.linkedin.com/in/taejuneyoun/">Linkedin</a>
+                `;
+            } else {
+                // 기본 footer 내용
+                footer.innerHTML = `
+                    <a href="https://taejuneyoun.xyz/index.html">©2015-2025 Taejune Youn. <br> Industrial designer, based in Seoul.</a>
+                    <br><br>
+                    <a href="mailto:﻿"taejuneyoun@gmail.com">taejuneyoun@gmail.com</a>
+                    <br><a href="https://www.linkedin.com/in/taejuneyoun/">Linkedin</a>
+                `;
+            }
+        }
+
+        // 페이지 로드 시 실행
+        window.addEventListener('load', updateFooterBasedOnScreenSize);
+
+        // 화면 크기 변경 시 실행
+        window.addEventListener('resize', updateFooterBasedOnScreenSize);
+    </script>
 
   <!------------------------------------------------------------------------------------------------------------------>
   <!------------------------------------------------------------------------------------------------------------------>
