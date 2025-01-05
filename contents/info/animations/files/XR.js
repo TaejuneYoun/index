@@ -310,6 +310,30 @@ window.XR = function(X, w, G, Y, wa, D, xa, ya, za, Aa, Ba, L, M, Z, $, Ca, aa, 
         a = a ? a : window.event;
         a.preventDefault() ? a.preventDefault() : a.returnValue = u
     }
+
+  function updateBackbufferStyle() {
+    const l = document.createElement("div");
+    const isSmallScreen = window.matchMedia("(max-width: 729px)").matches;
+
+    if (isSmallScreen) {
+        l.setAttribute("id", "backbuffer");
+        b = "top: 200px;";
+    } else {
+        l.setAttribute("id", "backbuffer");
+        b = "top: 0px;";
+    }
+
+    // 예: 스타일 적용 (필요 시)
+    l.style.cssText = b;
+    document.body.appendChild(l); // 필요한 경우 DOM에 추가
+}
+
+// 페이지 로드 시 실행
+window.addEventListener("load", updateBackbufferStyle);
+
+// 화면 크기 변경 시 실행
+window.addEventListener("resize", updateBackbufferStyle);
+  
     var A = "/"
       , K = "https://raw.githubusercontent.com/TaejuneYoun/index/refs/heads/main/contents/info/info"
       , ta = K.lastIndexOf("/");
