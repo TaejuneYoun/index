@@ -5,7 +5,7 @@
             cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%231C225E" width="64px" height="64px"><circle cx="12" cy="12" r="10"/></svg>'), auto;
             margin: 0;
             padding: 0;
-            background-color: #fefefe;
+            background-color: rgb(252, 252, 252);
             color: #000;
             transition: margin-top 0.1s ease;
             -ms-touch-action: none;
