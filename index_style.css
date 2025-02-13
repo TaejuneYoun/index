@@ -16,19 +16,6 @@
         overflow-x: hidden;
         }
 
-        #load {
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            position: fixed;
-            display: block;
-            opacity: 0.8;
-            background: white;
-            z-index: 99;
-            text-align: center;
-        }
-
 
         a:hover, a:active {
             cursor: url('../assets/cursor_go.png'), auto;
@@ -69,6 +56,12 @@
                 height: 100%;
                 object-fit: cover; // maintaining its original ratio.
             }
+        }
+
+        .full-width {
+            width: 100%;
+            height: auto; /* 비율 유지 */
+            display: block; /* 여백 제거 */
         }
 
         .slides {
