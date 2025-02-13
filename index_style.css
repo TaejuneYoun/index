@@ -9,6 +9,13 @@
             font-size: 15pt;
             transition: margin-top 0.1s ease;
         }
+       
+        /* 모바일 수평 스크롤 금지 */
+        html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+        }
+\
 
         a:hover, a:active {
             cursor: url('../assets/cursor_go.png'), auto;
