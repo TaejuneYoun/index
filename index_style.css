@@ -64,6 +64,13 @@
             display: block; /* 여백 제거 */
         }
 
+        .full-hight {
+            width: auto;
+            height: 100%; /* 비율 유지 */
+            display: block; /* 여백 제거 */
+        }
+
+
         .slides {
             display: flex;
             transition: transform 0.5s ease-in-out;
